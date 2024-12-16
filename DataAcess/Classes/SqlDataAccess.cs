@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Configuration;
 
 namespace DataAccess.Classes
@@ -91,7 +91,8 @@ namespace DataAccess.Classes
 
         public string GetDatabaseConnectionString(string ConnectionId)
         {
-            return ConfigurationManager.ConnectionStrings[ConnectionId].ConnectionString;
+            //return ConfigurationManager.ConnectionStrings[ConnectionId].ConnectionString;
+            throw new NotImplementedException();
         }
 
 

@@ -6,4 +6,21 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CSharp_DataAccessInterface\Data Access Interface\DataAccessInterface.csproj" />
+    <ProjectReference Include="..\..\CSharp_Utilities\Utilities\Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bloomberglp.Blpapi">
+      <HintPath>..\..\Osmium\Osmium\DataAccess\Packages\Bloomberglp.Blpapi.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
